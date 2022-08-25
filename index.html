@@ -20,13 +20,13 @@
       <nav class="list">
         <a class="logo" href="">Web<span class="logo-dark">Studio</span></a>
        
-        <ul class="list">
-          <li class="site-list-item">
-            <a class="site-nav-link link current" href="">Студія</a></li>
-          <li class="site-list-item">
-            <a class="site-nav-link link no-current" href="./portfolio.html">Портфоліо</a></li>
-          <li class="site-list-item">
-            <a class="site-nav-link link" href="">Контакти</a></li>
+      <ul class="list">
+        <li class="site-list-item">
+          <a class="site-nav-link link current" href="">Студія</a></li>
+        <li class="site-list-item">
+          <a class="site-nav-link link no-current" href="./portfolio.html">Портфоліо</a></li>
+        <li class="site-list-item">
+          <a class="site-nav-link link no-current" href="">Контакти</a></li>
         </ul>
       </nav>
       <ul class="style-flex">
@@ -50,7 +50,7 @@
       <div class="container">
         <h1 class="head-title">ЕФЕКТИВНі РіШЕННЯ ДЛЯ <br> ВАШОГО БІЗНЕСУ</h1>
 
-        <button class="button">Замовити послугу</button>
+        <button class="button" data-modal-open>Замовити послугу</button>
       </div>
       </section>
       
@@ -363,13 +363,19 @@
           </div>
     </div>
     </footer>
+   
     
-  <div class="backdrop is-hidden">
+
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <p></p>
-      <button>X</button>
+      <div>
+      <button data-modal-close class="btn-close">
+        <svg class="close-icon"></svg>
+      </button>
+      </div>
     </div>
   </div>
 
+  <script src="./js/modal.js"></script>
   </body>
 </html>
