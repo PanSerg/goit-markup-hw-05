@@ -37,7 +37,7 @@ html {
   color: var(--accent-color);
 }
 
-.site-nav-link::after {
+.site-nav-link.current::after {
   content: "";
   display: block;
   width: 100%;
@@ -47,32 +47,10 @@ html {
   position: absolute;
   background-color: var(--accent-color);
   border-radius: 2px;
-
-  transform: scaleX(0);
-  transition: transform 250ms var(--cubic-beziar);
 }
 
 .site-nav-link:hover::after {
   transform: scaleX(1);
-}
-
-.current {
-  color: var(--accent-color);
-  padding-right: 2px;
-  padding-left: 2px;
-  position: relative;
-}
-
-.current::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
-  display: block;
-  bottom: -1px;
-  right: 0;
 }
 
 .no-current {
@@ -129,18 +107,18 @@ img {
  }
 
  .btn-close {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50px;
-    background: #FFFFFF;
-    cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  background: #FFFFFF;
+  cursor: pointer;
  }
 
 .container {
@@ -186,6 +164,10 @@ img {
   display: flex;
 }
 
+.site-list-work {
+  position: relative;
+}
+
 .site-list-work:not(:last-child) {
   margin-right: 30px;
 }
@@ -194,27 +176,8 @@ img {
   position: relative;
 }
 
-.slw-thumb::before {
-  position: absolute;
-  bottom: 0;
-  content: "";
-  width: 100%;
-  height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  float: none;
-  display: inline-block;
-  background: rgba(47, 48, 58, 0.8);
-}
-.gajet-overlay::before {
-  position: absolute;
-  contain: "";
-  box-sizing: border-box;
-  display: flex;
-}
 .gajet-overlay-title {
-  position: static;
+  position: absolute;
   box-sizing: border-box;
   display: block;
   float: none;
@@ -223,7 +186,15 @@ img {
   line-height: 1.14;
   text-align: center;
   letter-spacing: 0.03em;
-  color: black;
+  color: var(--primary-white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  height: 70px;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .portfolio-card-link {
