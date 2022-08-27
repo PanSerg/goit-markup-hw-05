@@ -193,22 +193,17 @@ img {
   justify-content: center;
 }
 
-.portfolio-card-link {
- position: relative;
+.portfolio-overlay-text:hover,
+.portfolio-overlay-text:focus {
+  transform: translateY(0%);
+  background-color: #2196f3;
 }
 
-.portfolio-card-link:hover::before {
-  opacity: 1;
+.portfolio-card-link {
+ position: relative;
+
 }
-.portfolio-card-link::before {
-  position: absolute;
-  display: inline-block;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: rgba(33, 150, 243, 0.9);
-  opacity: 0;
-}
+
 .portfolio-overlay-text {
   position: absolute;
   width: 100%;
@@ -221,14 +216,10 @@ img {
   letter-spacing: 0.03em;
   padding-top: 63px;
   padding-left: 24px;
-  transform: translateY(100%);
-  transition: transform 250ms var(--cubic-beziar);
   opacity: 250ms var(--cubic-beziar);
+  transform: translateY(100%);
 }
 .pictures {
-  position: relative;
-  overflow: hidden;
-
   border: 1px solid #EEEEEE;
   background: #FFFFFF;
   padding-top: 20px;
