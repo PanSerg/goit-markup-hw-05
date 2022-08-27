@@ -270,6 +270,7 @@ body {
 }
 
 .benefits-container {
+  gap: 30px;
   display: flex;
   align-items: center;
 }
@@ -321,6 +322,7 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .team-link {
+  color: #AFB1B8;
   display: flex;
   width: 44px;
   height: 44px;
@@ -333,19 +335,36 @@ h1,h2,h3,h4,h5,h6,p {
 .team-link:hover,
 .team-link:focus {
   background-color: #2196f3;
+  color: #ffffff;
+}
+
+.button-icon:not(:last-child) {
+  padding-right: 10px;
+}
+
+.button-icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+
+.button-icon-ft {
+  fill: #ffffff;
+  width: 20px;
+  height: 20px;
 }
 
 .head-title {
   margin-top: 0;
   padding-bottom: 0;
   margin-bottom: 30px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #FFFFFF;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 /* Logo */
@@ -372,7 +391,6 @@ ul {
   flex-wrap: wrap;
 }
 
-
 .tim-card {
   text-align: center;
   padding: 30px 0;
@@ -389,6 +407,7 @@ ul {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
+  text-decoration: none;
 }
 
 .flex-element {
@@ -406,7 +425,7 @@ ul {
 }
 
 .portfolio-card-link {
- display: block;
+  display: block;
 }
 
 .portfolio-card-link:hover,
@@ -477,6 +496,8 @@ ul {
 }
 
 .contact {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -524,10 +545,9 @@ ul {
 }
 
 .section.no-padding {
-    padding-top: 0;
-    padding-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
-
 
 .site-item {
   display: flex;
@@ -543,7 +563,6 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-text-color);
-  margin-right: 30px;
 }
 
 .features-text {
@@ -552,10 +571,6 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-}
-
-.features-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .features-item {
@@ -570,10 +585,6 @@ ul {
   background-size: contain;
   background-repeat: no-repeat;
   margin-bottom: 30px;
-}
-
-.text-indent {
-  padding-right: 30px;
 }
 
 .features-logo {
@@ -629,7 +640,6 @@ ul {
   justify-content: center;
   gap: 10px;
 }
-
 
 .clients-container {
   display: flex;
@@ -735,12 +745,12 @@ ul {
 /* Наши преимущества */
 
 .themes {
-      margin-bottom: 4px;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 2;
-      letter-spacing: 0.06em;
-      color: var(--main-text-color);
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--main-text-color);
 }
 
 .thems-text {
@@ -759,22 +769,21 @@ ul {
 
 .contact-footer {
   margin-top: 9px;
-  
   font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .tel-color {
   font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .style-footer {
@@ -801,9 +810,9 @@ ul {
 }
 
 .footer-container {
- display: flex;
- gap: 70px;
- align-items: baseline;
+  display: flex;
+  gap: 70px;
+  align-items: baseline;
 }
 
 .item-with {
@@ -839,26 +848,6 @@ ul {
   background-color: rgba(33, 150, 243, 1);
 }
 
-.button-icon:not(:last-child) {
-  padding-right: 10px;
-}
-
-.button-icon {
-  fill: #AFB1B8;
-  width: 20px;
-  height: 20px;
-}
-
-.button-icon:hover,
-.button-icon:focus {
-  fill: #ffffff;
-}
-
-.button-icon-ft {
-  fill: #ffffff;
-  width: 20px;
-  height: 20px;
-}
 
 /* Спрятанный заголовок */
 .visually-hidden {
