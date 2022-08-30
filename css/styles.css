@@ -205,7 +205,8 @@ img {
   text-decoration: none;
 }
 
-.portfolio-card-link:hover
+.portfolio-card-link:hover,
+.portfolio-card-link:focus
 .portfolio-overlay-text {
   transform: translate(0);
 }
