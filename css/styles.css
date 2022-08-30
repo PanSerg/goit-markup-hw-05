@@ -80,16 +80,13 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
-  transition: opacity 250ms var(--cubic-beziar);
-  
+  transition: opacity 250ms var(--cubic-beziar), visibility 250ms var(--cubic-beziar);
 }
 
  .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-  visibility: 1;
-  transition: visibility 250ms var(--cubic-beziar);
  }
 
  .backdrop.is-hidden .modal {
@@ -107,6 +104,20 @@ img {
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--cubic-beziar);
+ }
+
+ .link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  display: block;
+  transform: 1;
+  transition: transform 250ms var(--cubic-beziar);
+ }
+
+ .link.is-hidden {
+  transition-property: color;
+  transform: 0;
  }
 
  .btn-close {
@@ -205,9 +216,8 @@ img {
   text-decoration: none;
 }
 
-.portfolio-card-link:hover,
-.portfolio-card-link:focus
-.portfolio-overlay-text {
+.portfolio-card-link:hover .portfolio-overlay-text,
+.portfolio-card-link:focus .portfolio-overlay-text {
   transform: translate(0);
 }
 
@@ -236,7 +246,6 @@ img {
   padding-right: 24px;
   padding-left: 24px;
   padding-bottom: 20px;
- 
 }
 
 .site-command {
@@ -276,13 +285,6 @@ body {
   display: flex;
 }
 
-.link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  display: block;
-  
-}
 
 h1,h2,h3,h4,h5,h6,p {
     margin-top: 0;
@@ -398,6 +400,11 @@ ul {
   padding: 30px 0;
 }
 
+ .link:hover,
+ .link:focus {
+  color: var(--accent-color);
+ }
+
 .test-conntainer {
   width: 1230px;
   padding-left: 15px;
@@ -507,10 +514,7 @@ ul {
   color: var(--secondary-text-color);
 }
 
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
-}
+
 
 .button-blue {
   color: var(--primary-white-color);
@@ -592,6 +596,8 @@ ul {
 .features-logo {
   width: 106px;
   height: 60px;
+  fill: rgba(175, 177, 184, 1);
+  transition: color 250ms;
 }
 
 .clients-icon:hover,
