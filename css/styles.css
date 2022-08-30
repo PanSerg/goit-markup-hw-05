@@ -30,6 +30,7 @@ html {
   color: var(--main-text-color);
   display: block;
   position: relative;
+  transition: color 250ms var(--cubic-beziar);
 }
 
 .site-nav-link:hover,
@@ -113,7 +114,6 @@ img {
 
  }
 
- 
 
  .btn-close {
   position: absolute;
@@ -476,6 +476,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  transition: color 250ms var(--cubic-beziar);
 }
 
 .filter {
@@ -510,6 +511,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  transition: color 250ms var(--cubic-beziar);
 }
 
 .button-blue {
@@ -519,6 +521,7 @@ ul {
 
 .contact-tel {
   color: var(--secondary-text-color);
+  transition: color 250ms var(--cubic-beziar);
 }
 
 .feature-skills {
@@ -789,6 +792,7 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms var(--cubic-beziar);
 }
 
 .style-footer {
@@ -842,6 +846,7 @@ ul {
   align-items: center;
   justify-content: center;
   background: rgba(255, 255, 255, 0.1);
+  transition: color 250ms var(--cubic-beziar);
 }
 
 .footer-link-soc:not(:last-child) {
