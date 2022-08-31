@@ -799,7 +799,7 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  transition: color 250ms var(--cubic-beziar);
+  transition: 250ms var(--cubic-beziar);
 }
 
 .style-footer {
