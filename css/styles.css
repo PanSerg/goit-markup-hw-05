@@ -291,7 +291,7 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .lable {
-    color: var(--primary-white-color);
+  color: var(--primary-white-color);
 }
 
 .head {
@@ -333,6 +333,7 @@ h1,h2,h3,h4,h5,h6,p {
   justify-content: center;
   background-position: center;
   border-radius: 50px;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-beziar);
 }
@@ -437,6 +438,8 @@ ul {
 
 .portfolio-card-link {
   display: block;
+  transition-property: box-shadow;
+  transition: 250ms var(--cubic-beziar);
 }
 
 .portfolio-card-link:hover,
@@ -480,6 +483,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  transition-property: color, background-color, box-shadow;
   transition-duration: 250ms; 
   transition-timing-function: var(--cubic-beziar);
 }
@@ -755,6 +759,7 @@ ul {
     letter-spacing: 0.06em;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    border: transparent;
 }
 
 /* Наши преимущества */
@@ -799,6 +804,7 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition-property: color;
   transition: 250ms var(--cubic-beziar);
 }
 
@@ -852,7 +858,8 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-beziar);
 }
